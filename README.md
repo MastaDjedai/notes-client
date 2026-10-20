@@ -1,59 +1,57 @@
-# NotesClient
+# Note Manager — Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.27.
+A note management application built with Angular. Users can create, view, edit, and delete notes through a simple and responsive interface.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Create, edit, view, and delete notes.
+- Communicate with a REST API.
+- Manage application state using NgRx Store and Effects.
+- Switch between English and Ukrainian.
+- Responsive user interface.
+- End-to-end tests with Playwright.
 
-```bash
-ng serve
-```
+## Tech Stack
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Angular 21
+- TypeScript
+- NgRx Store and Effects
+- ngx-translate
+- HTML and CSS
+- Playwright
 
-## Code scaffolding
+## Prerequisites
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Make sure the following tools are installed:
 
-```bash
-ng generate component component-name
-```
+- Node.js
+- npm
+- The Note Manager Backend API
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Getting Started
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+### 1. Install dependencies
 
 ```bash
-ng test
+npm install
 ```
 
-## Running end-to-end tests
+### 2. Start the Backend
 
-For end-to-end (e2e) testing, run:
+Start the Note Manager Backend API separately. By default, the frontend expects the API to be available at:
+
+`http://localhost:5071/notes`
+
+If the API runs on a different address, update the API URL in `src/app/services/notes.service.ts`.
+
+### 3. Start the Frontend
 
 ```bash
-ng e2e
+npm start
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Open `http://localhost:4200` in your browser.
 
-## Additional Resources
+## Running Tests
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Build
